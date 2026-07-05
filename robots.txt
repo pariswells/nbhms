@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://handymannorthbrisbane.com.au/sitemap.xml
