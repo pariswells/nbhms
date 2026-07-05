@@ -1,0 +1,495 @@
+/*==Flaticon icon font: Flaticon==*/
+
+@font-face {
+	font-family: Flaticon;	
+	src: url(../fonts/Flaticon.eot);
+	src: url(../fonts/Flaticon.eot#iefix) format("embedded-opentype"),
+	url(../fonts/Flaticon.woff) format("woff"), 
+	url(../fonts/Flaticon.ttf) format("truetype"), 
+	url(../images/Flaticon.svg#Flaticon) format("svg");
+	font-weight: 400;
+	font-style: normal
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+@font-face {
+	font-family: Flaticon;
+	src: url(../images/Flaticon.svg#Flaticon) format("svg")
+}
+}
+[class*=" flaticon-"]:after, [class*=" flaticon-"]:before, [class^=flaticon-]:after, [class^=flaticon-]:before {
+	font-family: Flaticon;
+	font-size: 38px;
+	font-style: normal
+}
+.flaticon-road-with-broken-line:before {
+	content: "\f100"
+}
+.flaticon-sea-dyke:before {
+	content: "\f101"
+}
+.flaticon-plumber-working:before {
+	content: "\f102"
+}
+.flaticon-golden-gate-bridge:before {
+	content: "\f103"
+}
+.flaticon-trees:before {
+	content: "\f104"
+}
+.flaticon-roller-1:before {
+	content: "\f105"
+}
+.flaticon-work-tools:before {
+	content: "\f106"
+}
+.flaticon-construction-16:before {
+	content: "\f107"
+}
+.flaticon-construction-15:before {
+	content: "\f108"
+}
+.flaticon-construction-14:before {
+	content: "\f109"
+}
+.flaticon-construction-13:before {
+	content: "\f10a"
+}
+.flaticon-construction-12:before {
+	content: "\f10b"
+}
+.flaticon-construction-11:before {
+	content: "\f10c"
+}
+.flaticon-construction-10:before {
+	content: "\f10d"
+}
+.flaticon-buildings:before {
+	content: "\f10e"
+}
+.flaticon-construction-9:before {
+	content: "\f10f"
+}
+.flaticon-construction-8:before {
+	content: "\f110"
+}
+.flaticon-construction-7:before {
+	content: "\f111"
+}
+.flaticon-construction-6:before {
+	content: "\f112"
+}
+.flaticon-construction-5:before {
+	content: "\f113"
+}
+.flaticon-technology:before {
+	content: "\f114"
+}
+.flaticon-people-1:before {
+	content: "\f115"
+}
+.flaticon-caution:before {
+	content: "\f116"
+}
+.flaticon-nature:before {
+	content: "\f117"
+}
+.flaticon-transport-1:before {
+	content: "\f118"
+}
+.flaticon-transport:before {
+	content: "\f119"
+}
+.flaticon-construction-4:before {
+	content: "\f11a"
+}
+.flaticon-beach:before {
+	content: "\f11b"
+}
+.flaticon-wall:before {
+	content: "\f11c"
+}
+.flaticon-landscape:before {
+	content: "\f11d"
+}
+.flaticon-tool-1:before {
+	content: "\f11e"
+}
+.flaticon-construction-3:before {
+	content: "\f11f"
+}
+.flaticon-tool:before {
+	content: "\f120"
+}
+.flaticon-gloves:before {
+	content: "\f121"
+}
+.flaticon-paint:before {
+	content: "\f122"
+}
+.flaticon-door:before {
+	content: "\f123"
+}
+.flaticon-wrench:before {
+	content: "\f124"
+}
+.flaticon-drawing-1:before {
+	content: "\f125"
+}
+.flaticon-roller:before {
+	content: "\f126"
+}
+.flaticon-construction-1:before {
+	content: "\f127"
+}
+.flaticon-construction-2:before {
+	content: "\f128"
+}
+.flaticon-art:before {
+	content: "\f129"
+}
+.flaticon-drawing:before {
+	content: "\f12a"
+}
+.flaticon-tools:before {
+	content: "\f12b"
+}
+.flaticon-construction:before {
+	content: "\f12c"
+}
+.flaticon-people:before {
+	content: "\f12d"
+}
+.flaticon-email:before {
+	content: "\f12e"
+}
+.flaticon-fax:before {
+	content: "\f12f"
+}
+.flaticon-smartphone:before {
+	content: "\f130"
+}
+.flaticon-placeholder:before {
+	content: "\f131"
+}
+
+
+/*=================================
+	ICONMOON CSS
+==================================*/
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot');
+  src:  url('../fonts/icomoon.eot#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf') format('truetype'),
+    url('../fonts/icomoon.woff') format('woff'),
+    url('../images/icomoon.svg#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-apus-pricing-table-1:before {
+  content: "\e900";
+}
+.icon-apus-pricing-table-2:before {
+  content: "\e901";
+}
+.icon-apus-shopping-basket:before {
+  content: "\e902";
+}
+.icon-apus-close:before {
+  content: "\e903";
+}
+.icon-apus-download:before {
+  content: "\e904";
+}
+.icon-apus-left-quote:before {
+  content: "\e905";
+}
+.icon-apus-left-quote-control:before {
+  content: "\e906";
+}
+.icon-apus-magnifiying-glass:before {
+  content: "\e907";
+}
+.icon-apus-menu:before {
+  content: "\e908";
+}
+.icon-apus-move:before {
+  content: "\e909";
+}
+.icon-apus-next:before {
+  content: "\e90a";
+}
+.icon-apus-next-control:before {
+  content: "\e90b";
+}
+.icon-apus-right-arrow:before {
+  content: "\e90c";
+}
+.icon-apus-right-quotation-sign:before {
+  content: "\e90d";
+}
+.icon-apus-right-quote:before {
+  content: "\e90e";
+}
+.icon-apus-shopping-cart:before {
+  content: "\e90f";
+}
+.icon-apus-supermarket:before {
+  content: "\e910";
+}
+.icon-apus-user:before {
+  content: "\e911";
+}
+.icon-hours:before {
+  content: "\e912";
+}
+.icon-hours-1:before {
+  content: "\e913";
+}
+.icon-buildings:before {
+  content: "\e914";
+}
+.icon-clock:before {
+  content: "\e915";
+}
+.icon-clock-1:before {
+  content: "\e916";
+}
+.icon-email:before {
+  content: "\e917";
+}
+.icon-envelope:before {
+  content: "\e918";
+}
+.icon-envelope-1:before {
+  content: "\e919";
+}
+.icon-fax:before {
+  content: "\e91a";
+}
+.icon-house:before {
+  content: "\e91b";
+}
+.icon-placeholder:before {
+  content: "\e91c";
+}
+.icon-smartphone:before {
+  content: "\e91d";
+}
+.icon-smartphone-1:before {
+  content: "\e91e";
+}
+.icon-time:before {
+  content: "\e91f";
+}
+.icon-time-1:before {
+  content: "\e920";
+}
+.icon-time-2:before {
+  content: "\e921";
+}
+.icon-travel:before {
+  content: "\e922";
+}
+.icon-apus-full-screen:before {
+  content: "\e923";
+}
+.icon-apus-maximize:before {
+  content: "\e924";
+}
+.icon-apus-architecture:before {
+  content: "\e925";
+}
+.icon-apus-backhoe:before {
+  content: "\e926";
+}
+.icon-apus-blueprint:before {
+  content: "\e927";
+}
+.icon-apus-brick:before {
+  content: "\e928";
+}
+.icon-apus-bricklayer:before {
+  content: "\e929";
+}
+.icon-apus-bricklayer-2:before {
+  content: "\e92a";
+}
+.icon-apus-build:before {
+  content: "\e92b";
+}
+.icon-apus-car-parts:before {
+  content: "\e92c";
+}
+.icon-apus-cement:before {
+  content: "\e92d";
+}
+.icon-apus-chat:before {
+  content: "\e92e";
+}
+.icon-apus-city:before {
+  content: "\e92f";
+}
+.icon-apus-cityscape:before {
+  content: "\e930";
+}
+.icon-apus-construction-machine:before {
+  content: "\e931";
+}
+.icon-apus-construction-machine-1:before {
+  content: "\e932";
+}
+.icon-apus-crane:before {
+  content: "\e933";
+}
+.icon-apus-crane-1:before {
+  content: "\e934";
+}
+.icon-apus-department:before {
+  content: "\e935";
+}
+.icon-apus-ecology:before {
+  content: "\e936";
+}
+.icon-apus-engineer:before {
+  content: "\e937";
+}
+.icon-apus-engineer-1:before {
+  content: "\e938";
+}
+.icon-apus-engineer-2:before {
+  content: "\e939";
+}
+.icon-apus-excavator:before {
+  content: "\e93a";
+}
+.icon-apus-fence:before {
+  content: "\e93b";
+}
+.icon-apus-flashlight:before {
+  content: "\e93c";
+}
+.icon-apus-heart:before {
+  content: "\e93d";
+}
+.icon-apus-heavy-vehicle:before {
+  content: "\e93e";
+}
+.icon-apus-heavy-vehicle-1:before {
+  content: "\e93f";
+}
+.icon-apus-heavy-vehicle-2:before {
+  content: "\e940";
+}
+.icon-apus-heavy-vehicle-3:before {
+  content: "\e941";
+}
+.icon-apus-helmet:before {
+  content: "\e942";
+}
+.icon-apus-home:before {
+  content: "\e943";
+}
+.icon-apus-hotel:before {
+  content: "\e944";
+}
+.icon-apus-house:before {
+  content: "\e945";
+}
+.icon-apus-ladder:before {
+  content: "\e946";
+}
+.icon-apus-manufacture:before {
+  content: "\e947";
+}
+.icon-apus-paint:before {
+  content: "\e948";
+}
+.icon-apus-painting:before {
+  content: "\e949";
+}
+.icon-apus-painting-1:before {
+  content: "\e94a";
+}
+.icon-apus-paint-roller:before {
+  content: "\e94b";
+}
+.icon-apus-pickaxe:before {
+  content: "\e94c";
+}
+.icon-apus-plier:before {
+  content: "\e94d";
+}
+.icon-apus-port:before {
+  content: "\e94e";
+}
+.icon-apus-property:before {
+  content: "\e94f";
+}
+.icon-apus-repair:before {
+  content: "\e950";
+}
+.icon-apus-ruler:before {
+  content: "\e951";
+}
+.icon-apus-saw:before {
+  content: "\e952";
+}
+.icon-apus-soil:before {
+  content: "\e953";
+}
+.icon-apus-steamroller:before {
+  content: "\e954";
+}
+.icon-apus-toolbool:before {
+  content: "\e955";
+}
+.icon-apus-tools:before {
+  content: "\e956";
+}
+.icon-apus-town:before {
+  content: "\e957";
+}
+.icon-apus-tripod:before {
+  content: "\e958";
+}
+.icon-apus-truck:before {
+  content: "\e959";
+}
+.icon-apus-urban:before {
+  content: "\e95a";
+}
+.icon-apus-wheelbarrow:before {
+  content: "\e95b";
+}
+.icon-apus-worker:before {
+  content: "\e95c";
+}
+.icon-apus-workshop:before {
+  content: "\e95d";
+}
+.icon-apus-wrench:before {
+  content: "\e95e";
+}
+.icon-apus-zoom-in:before {
+  content: "\e95f";
+}
+
