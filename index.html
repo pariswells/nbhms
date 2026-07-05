@@ -388,41 +388,14 @@ border-color:#ee1c25 !important;
 			<div id="main" class="site-main clearfix" role="main">
 
 						<div data-elementor-type="wp-post" data-elementor-id="6" class="elementor elementor-6">
-						<section class="elementor-section elementor-top-section elementor-element elementor-element-3b076bb elementor-section-stretched elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="3b076bb" data-element_type="section" data-settings="{" stretch_section":"section-stretched"}"="">
-						<div class="elementor-container elementor-column-gap-extended">
-					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-fdeaf73" data-id="fdeaf73" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-						<div class="elementor-element elementor-element-98b6318 elementor-widget elementor-widget-apus_element_revslider" data-id="98b6318" data-element_type="widget" data-widget_type="apus_element_revslider.default">
-				<div class="elementor-widget-container">
-					        <div class="widget-revslider ">
-            
-				<p class="rs-p-wp-fix"></p>
-				<sr7-module data-alias="slideshow-home-1" data-id="1" id="SR7_1_1" class="rs-ov-hidden" data-version="6.7.34" style="height: 915px;">
-					<sr7-adjuster style="height: 915px;"></sr7-adjuster>
-					<sr7-content style="height: 915px; left: 0px;">
-						<sr7-slide id="SR7_1_1-1" data-key="1">
-							<sr7-bg id="SR7_1_1-1-28" class="sr7-layer"><noscript><img decoding="async" src="https://handymannorthbrisbane.com.au/storage/2024/07/banner.jpg" alt="banner" title="banner"></noscript></sr7-bg>
-							<sr7-txt id="SR7_1_1-1-1" class="sr7-layer">Your Trusted Local Handyman Across North Brisbane</sr7-txt>
-							<a id="SR7_1_1-1-5" class="sr7-layer" href="https://handymannorthbrisbane.com.au/#contact-us" target="_self">request a quote</a>
-							<sr7-txt id="SR7_1_1-1-18" class="sr7-layer">We handle all your home maintenance needs across North Brisbane. Get a free quote today.</sr7-txt>
-						</sr7-slide>
-						<sr7-slide id="SR7_1_1-6" data-key="6">
-						</sr7-slide>
-					<sr7-module-shadow class="sr7-shdw-0"></sr7-module-shadow></sr7-content>
-					<image_lists style="display:none">
-						<img data-src="images/banner.jpg" data-libid="4173" data-lib="medialibrary" alt="banner" title="banner" width="0" height="0">
-					</image_lists>
-				<sr7-prl class="prlt0 sr7-fade-in" style=""><div class="dot1" style=""></div><div class="dot2" style=""></div><div class="bounce1" style=""></div><div class="bounce2" style=""></div><div class="bounce3" style=""></div></sr7-prl></sr7-module>
-				<script>
-					SR7.PMH ??={}; SR7.PMH["SR7_1_1"] = {cn:100,state:false,fn: function() { if (_tpt!==undefined && _tpt.prepareModuleHeight !== undefined) {  _tpt.prepareModuleHeight({id:"SR7_1_1",el:[900,900,768,400,400],type:'standard',shdw:'0',gh:[900,900,768,400,400],gw:[1140,1140,1024,778,480],vpt:['100px','100px','100px','100px','100px'],size:{fullWidth:true, fullHeight:true},fho:',',mh:'0',onh:0,onw:0,bg:{color:'{"orig":"transparent","type":"solid","string":"transparent"}'},plType:'0',plColor:'#FFFFFF'});   SR7.PMH["SR7_1_1"].state=true;} else if(SR7.PMH["SR7_1_1"].cn-->0)	setTimeout( SR7.PMH["SR7_1_1"].fn,19);}};SR7.PMH["SR7_1_1" ].fn();
-				</script>
-        </div>
-        				</div>
-				</div>
-					</div>
-		</div>
-					</div>
-		</section>
+						<section id="main-hero" style="min-height:560px;display:flex;align-items:center;background:#1c1c1e;background-image:url('images/banner.jpg');background-size:cover;background-position:center;position:relative;padding:140px 0 100px;">
+						<div style="position:absolute;inset:0;background:rgba(0,0,0,.58);"></div>
+						<div class="container" style="position:relative;z-index:1;text-align:center;">
+							<h1 style="font-size:52px;font-weight:900;color:#fff;line-height:1.15;margin-bottom:18px;">Your Trusted Local Handyman<br>Across North Brisbane</h1>
+							<p style="font-size:18px;color:rgba(255,255,255,.85);max-width:580px;margin:0 auto 34px;line-height:1.7;">We handle all your home maintenance needs across North Brisbane. Get a free quote today.</p>
+							<a href="#contact-us" class="btn btn-theme btn-lg" style="background:#ee1c25;border-color:#ee1c25;color:#fff;padding:14px 44px;font-size:16px;font-weight:700;letter-spacing:1px;border-radius:0;">Request a Quote</a>
+						</div>
+					</section>
 				<section class="elementor-section elementor-top-section elementor-element elementor-element-29070ab elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="29070ab" data-element_type="section" id="about-us" data-settings="{" stretch_section":"section-stretched","background_background":"classic"}"="">
 						<div class="elementor-container elementor-column-gap-extended">
 					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-60d6d64" data-id="60d6d64" data-element_type="column">
@@ -1091,6 +1064,7 @@ var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false
 <script id="twentytwenty-event-move-js" src="js/jquery.event.move.js"></script>
 <script id="twentytwenty-js" src="js/jquery.twentytwenty.js"></script>
 <script id="osteo-image-compare-js" src="js/main.js"></script>
+<script>jQuery(window).on('load',function(){jQuery('.twentytwenty-container').twentytwenty({default_offset_pct:0.5,no_overlay:false});});</script>
 <script id="wp-emoji-settings" type="application/json">
 {"baseUrl":"https://s.w.org/images/core/emoji/17.0.2/72x72/","ext":".png","svgUrl":"https://s.w.org/images/core/emoji/17.0.2/svg/","svgExt":".svg","source":{"concatemoji":"https://handymannorthbrisbane.com.au/lib/js/wp-emoji-release.min.js?rnd=78991"}}
 </script>
