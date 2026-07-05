@@ -841,10 +841,7 @@ Contact Us</span></h2><div class="wt-separator-outer">
 				<div class="elementor-element elementor-element-494bcff elementor-widget elementor-widget-text-editor" data-id="494bcff" data-element_type="widget" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
 									
-<!-- Contact form powered by Formspree. Sign up at formspree.io, create a form, and replace XXXXXXXX below with your form ID. -->
-<form action="https://formspree.io/f/mqevnkyy" method="POST" class="wpcf7-form-4" id="nbhms-contact-form">
-  <input type="hidden" name="_subject" value="New quote request — Handyman North Brisbane">
-  <input type="hidden" name="_next" value="https://handymannorthbrisbane.com.au/#contact-us">
+<form id="nbhms-contact-form" class="wpcf7-form-4">
   <div class="row">
     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
       <p><label><input type="text" name="first_name" placeholder="First Name" required maxlength="100" class="wpcf7-form-control wpcf7-text"></label></p>
@@ -862,10 +859,52 @@ Contact Us</span></h2><div class="wt-separator-outer">
       <p><label><textarea name="message" rows="8" maxlength="2000" required placeholder="* Please describe the job and include any relevant measurements" class="wpcf7-form-control wpcf7-textarea"></textarea></label></p>
     </div>
     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-top-30 text-center">
-      <p><input type="submit" value="Submit" class="wpcf7-form-control wpcf7-submit"></p>
+      <p><button type="submit" class="wpcf7-form-control wpcf7-submit" id="nbhms-submit-btn">Submit</button></p>
+      <div id="nbhms-form-msg" style="display:none;margin-top:16px;padding:14px 20px;border-radius:4px;font-size:15px;font-weight:600;"></div>
     </div>
   </div>
 </form>
+<script>
+(function(){
+  var form = document.getElementById('nbhms-contact-form');
+  var btn  = document.getElementById('nbhms-submit-btn');
+  var msg  = document.getElementById('nbhms-form-msg');
+  if (!form) return;
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    btn.disabled = true;
+    btn.value = 'Sending…';
+    var data = new FormData(form);
+    fetch('https://formspree.io/f/mqevnkyy', {
+      method: 'POST',
+      body: data,
+      headers: { 'Accept': 'application/json' }
+    })
+    .then(function(res){ return res.json().then(function(json){ return { ok: res.ok, json: json }; }); })
+    .then(function(result){
+      if (result.ok) {
+        msg.style.display = 'block';
+        msg.style.background = '#e8f5e9';
+        msg.style.color = '#2e7d32';
+        msg.textContent = 'Thanks! We\'ll be in touch shortly.';
+        form.reset();
+      } else {
+        throw new Error((result.json.errors || []).map(function(e){ return e.message; }).join(', ') || 'Submission failed.');
+      }
+    })
+    .catch(function(err){
+      msg.style.display = 'block';
+      msg.style.background = '#ffebee';
+      msg.style.color = '#c62828';
+      msg.textContent = 'Something went wrong — please call us directly on 0412 334 872.';
+    })
+    .finally(function(){
+      btn.disabled = false;
+      btn.value = 'Submit';
+    });
+  });
+})();
+</script>
 								</div>
 				</div>
 					</div>
