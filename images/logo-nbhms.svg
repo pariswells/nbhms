@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 272 60" width="272" height="60" role="img" aria-label="Handyman North Brisbane">
+  <defs>
+    <clipPath id="ll"><rect x="0" y="0" width="26" height="60"/></clipPath>
+    <clipPath id="lr"><rect x="26" y="0" width="26" height="60"/></clipPath>
+  </defs>
+  <polygon points="26,3 51,27 39,27 39,57 13,57 13,27 1,27" fill="#1C1C1E" clip-path="url(#ll)"/>
+  <polygon points="26,3 51,27 39,27 39,57 13,57 13,27 1,27" fill="#EE1C25" clip-path="url(#lr)"/>
+  <line x1="62" y1="8" x2="62" y2="52" stroke="#DCDCDC" stroke-width="1.5"/>
+  <text x="72" y="34"
+    font-family="'Arial Black', 'Arial Bold', Arial, Helvetica, sans-serif"
+    font-size="22" font-weight="900"
+    fill="#1C1C1E">HANDYMAN</text>
+  <text x="73" y="51"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="10" font-weight="400"
+    letter-spacing="3.2"
+    fill="#EE1C25">NORTH BRISBANE</text>
+</svg>
