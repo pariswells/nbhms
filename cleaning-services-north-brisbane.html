@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html dir="ltr" lang="en-AU">
 <head>
 <meta charset="UTF-8">
@@ -311,13 +311,31 @@ input[type="submit"]{background:#ee1c25!important;}
         <div class="sub"><div class="sub-title-inside">Fill in your details and we'll get back to you within one business day.</div></div>
       </div>
       <div class="row"><div class="col-md-8 col-md-offset-2">
-        <form id="nbhms-contact-form" class="wpcf7-form-4">
+        <form id="nbhms-contact-form" class="wpcf7-form-4" enctype="multipart/form-data">
           <div class="row">
             <div class="col-sm-6"><p><label><input type="text" name="first_name" placeholder="First Name" required maxlength="100" class="wpcf7-form-control wpcf7-text"></label></p></div>
             <div class="col-sm-6"><p><label><input type="text" name="last_name" placeholder="Last Name" required maxlength="100" class="wpcf7-form-control wpcf7-text"></label></p></div>
             <div class="col-sm-6"><p><label><input type="email" name="email" placeholder="Email address" required maxlength="200" class="wpcf7-form-control wpcf7-text"></label></p></div>
             <div class="col-sm-6"><p><label><input type="tel" name="phone" placeholder="Phone" required maxlength="20" class="wpcf7-form-control wpcf7-text"></label></p></div>
             <div class="col-xs-12"><p><label><textarea name="message" rows="6" maxlength="2000" required placeholder="Please describe the job and include any relevant measurements" class="wpcf7-form-control wpcf7-textarea"></textarea></label></p></div>
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nbhms-photos">
+      <style>
+        .nbhms-photos label.nbhms-photo-drop{display:block;border:2px dashed #ccc;border-radius:4px;padding:18px;text-align:center;cursor:pointer;color:#555;font-size:15px;background:#fafafa;margin:0}
+        .nbhms-photos label.nbhms-photo-drop:hover{border-color:#e31e24;color:#222}
+        .nbhms-photos label.nbhms-photo-drop small{display:block;color:#888;font-size:13px;margin-top:4px}
+        .nbhms-photos input[type=file]{position:absolute;width:1px;height:1px;opacity:0;overflow:hidden}
+        .nbhms-photos input[type=file]:focus + label.nbhms-photo-drop{outline:2px solid #e31e24}
+        #nbhms-job-photos-list{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px;align-items:center}
+        .nbhms-photo-thumb img{width:72px;height:72px;object-fit:cover;border-radius:4px;display:block}
+        .nbhms-photo-status{font-size:13px;color:#555;width:100%}
+        .nbhms-photo-status.is-error{color:#c62828}
+      </style>
+      <p>
+        <input type="file" id="nbhms-job-photos" name="attachment" accept="image/*" multiple>
+        <label for="nbhms-job-photos" class="nbhms-photo-drop">Upload images of the job (optional)<small>Up to 5 photos &middot; JPG, PNG or HEIC</small></label>
+      </p>
+      <div id="nbhms-job-photos-list" aria-live="polite"></div>
+    </div>
             <div class="col-xs-12 margin-top-30 text-center">
               <p><button type="submit" class="wpcf7-form-control wpcf7-submit" id="nbhms-submit-btn">Submit</button></p>
               <div id="nbhms-form-msg" style="display:none;margin-top:16px;padding:14px 20px;border-radius:4px;font-size:15px;font-weight:600;"></div>
@@ -394,5 +412,6 @@ input[type="submit"]{background:#ee1c25!important;}
   });
 })();
 </script>
+<script src="js/job-photos.js"></script>
 </body>
 </html>
