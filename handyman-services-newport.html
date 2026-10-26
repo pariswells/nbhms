@@ -547,32 +547,7 @@ var rekon_ajax={"ajaxurl":"https://handymannorthbrisbane.com.au/wp-admin/admin-a
 <script src="js/jquery.twentytwenty.js"></script>
 <script src="js/jquery.event.move.js"></script>
 <script>jQuery(function($){$('.twentytwenty-container').twentytwenty({default_offset_pct:0.5,no_overlay:false});});</script>
-<script>
-(function(){
-  var form=document.getElementById('nbhms-contact-form');
-  var btn=document.getElementById('nbhms-submit-btn');
-  var msg=document.getElementById('nbhms-form-msg');
-  if(!form)return;
-  form.addEventListener('submit',function(e){
-    e.preventDefault();
-    btn.disabled=true;
-    var data=new FormData(form);
-    fetch('https://formspree.io/f/mqevnkyy',{method:'POST',body:data,headers:{'Accept':'application/json'}})
-    .then(function(res){return res.json().then(function(json){return{ok:res.ok,json:json};});})
-    .then(function(result){
-      if(result.ok){
-        msg.style.display='block';msg.style.background='#e8f5e9';msg.style.color='#2e7d32';
-        msg.textContent="Thanks! We'll be in touch shortly.";form.reset();
-      }else{throw new Error((result.json.errors||[]).map(function(e){return e.message;}).join(', ')||'Submission failed.');}
-    })
-    .catch(function(){
-      msg.style.display='block';msg.style.background='#ffebee';msg.style.color='#c62828';
-      msg.textContent='Something went wrong — please call us directly on 0412 334 872.';
-    })
-    .finally(function(){btn.disabled=false;});
-  });
-})();
-</script>
 <script src="js/job-photos.js"></script>
+<script src="js/quote-form.js"></script>
 </body>
 </html>
