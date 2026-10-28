@@ -8,3 +8,8 @@
  Version:      1.0.0
  Text Domain:  rekon-child
 */
+
+
+/* Mobile menu: sub-menu links were white on a white panel */
+.apus-offcanvas .main-mobile-menu .sub-menu > li > a{color:#444 !important;}
+.apus-offcanvas .main-mobile-menu .sub-menu > li.active > a,.apus-offcanvas .main-mobile-menu .sub-menu > li > a:hover{color:#e31e24 !important;}
