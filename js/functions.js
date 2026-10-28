@@ -338,6 +338,8 @@
             });
         },
         popupImage: function() {
+            // Popup plugin is only loaded on some pages.
+            if (!$.fn.magnificPopup) { return; }
             // popup
             $(".popup-image").magnificPopup({type:'image'});
             $('.popup-video').magnificPopup({
