@@ -68,7 +68,7 @@
     fd.append('fi-sender-email', val('email'));
     // Sent as text: Forminit's phone block rejects local AU formats (e.g. 0412 ...).
     fd.append('fi-text-phone', val('phone'));
-    fd.append('fi-text-location', val('job_location'));
+    fd.append('fi-text-job_location', val('job_location'));
     fd.append('fi-text-message', val('message'));
     fd.append('fi-text-page', document.title + ' (' + location.pathname + ')');
     var input = document.getElementById('nbhms-job-photos');
